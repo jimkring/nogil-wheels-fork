@@ -21,7 +21,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: 'indygreg/python-zstandard'
+          repository: 'jimkring/python-zstandard-nogil'
+          # repository: 'indygreg/python-zstandard'
           ref: ${{ env.VERSION }}
 
       - name: Build wheels
